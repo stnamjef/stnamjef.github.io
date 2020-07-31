@@ -1,11 +1,3 @@
----
-layout: default
-title: "C++ implementation of LeNet5"
-date: 2020-07-23 11:11:15 +0900
----
-
-
-
 # LeNet-5의 구현 및 성능 향상
 
 
