@@ -5,7 +5,7 @@ baseurl: ""
 url: "https://stnamjef.github.io"
 
 # Build settings
-theme: "just-the-docs"
+theme: jekyll-theme-cayman
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
