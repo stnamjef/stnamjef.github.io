@@ -2,7 +2,7 @@
 layout: default
 title: Back propagtion in batch-normalized CNN
 parent: Machine Learning
-nav_order: 1
+nav_order: 2
 mathjax: true
 ---
 
