@@ -200,7 +200,7 @@ delete_memory(train_Y);
 delete_memory(test_Y);
 ```
 
-## 6. Appendices
+## **6. Appendices**
 
 - [Back propagation in CNN](/docs/Machine Learning/2020-08-01-Back propagation in CNN)
 - [Back propagation in batch-normalized CNN](/docs/Machine Learning/2020-08-01-Back propagation in batch-normalized CNN)

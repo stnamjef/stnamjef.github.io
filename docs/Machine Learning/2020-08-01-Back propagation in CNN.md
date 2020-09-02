@@ -6,7 +6,7 @@ nav_order: 1
 mathjax: true
 ---
 
-# Back propagation in CNN
+# **Back propagation in CNN**
 
 
 
@@ -29,7 +29,7 @@ mathjax: true
 
 
 
-## 1. Output layer
+## **1. Output layer**
 
 <br/>
 
@@ -41,7 +41,7 @@ mathjax: true
 
 <br/>
 
-### (1) tanh + mse
+### **(1) tanh + mse**
 
 <br/>
 
@@ -112,7 +112,7 @@ $$
 
 <br/>
 
-### (2) softmax + cross entropy
+### **(2) softmax + cross entropy**
 
 <br/>
 
