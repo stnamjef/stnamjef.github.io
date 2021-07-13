@@ -1,0 +1,22 @@
+# Setup
+title:               Seungtae
+tagline:             'blog'
+description:         'This is my personal blog.'
+url:                 https://stnamjef.github.io
+baseurl:             ''
+paginate:            1
+permalink:           pretty
+
+# About/contact
+# author:
+#   name:              Mark Otto
+#   url:               https://twitter.com/mdo
+#   email:             markdotto@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
