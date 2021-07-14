@@ -1,11 +1,13 @@
 # Setup
-title:               Seungtae
-tagline:             'blog'
+title:               Seungtae's blog
+tagline:             'CV/ML'
 description:         'This is my personal blog.'
 url:                 https://stnamjef.github.io
 baseurl:             ''
 paginate:            1
 permalink:           pretty
+
+Disqus-shortname:    stnamjef-github-io
 
 # About/contact
 # author:
