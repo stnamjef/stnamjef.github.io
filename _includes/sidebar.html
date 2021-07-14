@@ -5,9 +5,25 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p style="margin: 0;">{{ site.description }}</p>
+    {% if site.author.contact %}
+    {% assign len = site.author.contact | size %}
+    {% assign current_index = 0 %}
+    <p style="margin: 0;"> Contact:  
+      {% for contact in site.author.contact %}
+      {% assign iconname = contact[0] %}
+      {% if contact[0] == 'email' %}
+      {% assign iconname = 'envelope' %}
+      {% endif %}
+      <a href="{{ contact[1] }}">
+        <i class="fa fa-{{ iconname }}" aria-hidden="true"></i>
+      </a>
+      {% assign current_index = current_index | plus: 1 %}
+      {% if current_index != len %}|{% endif %}
+      {% endfor %}
+    </p>
+    {% endif %}
   </div>
-
   <nav class="sidebar-nav">
     <!-- <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a> -->
 
@@ -28,11 +44,12 @@
     <a class="sidebar-nav-item" href="https://github.com/stnamjef">GitHub</a>
     <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
     <a class="sidebar-nav-item" href="/category/project">Project</a>
+    <a class="sidebar-nav-item" href="/category/algorithm">Algorithm</a>
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
     </p>
   </div>
 </div>
