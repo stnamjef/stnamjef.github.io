@@ -1,20 +1,20 @@
 # Setup
 title:               Seungtae's blog
 tagline:             'CV/ML'
-description:         'This is my personal blog.'
+description:         '공부한 것을 정리하는 블로그입니다.'
 url:                 https://stnamjef.github.io
 baseurl:             ''
-paginate:            1
+# paginate:            1
 permalink:           pretty
 
-Disqus-shortname:    stnamjef-github-io
+# Disqus-shortname:    stnamjef-github-io
 
 # About/contact
 author:
   name:              Seungtae
   contact:
-    github:            https://github.com/stnamjef
-    email:             mailto:stnamjef@naver.com
+    github:          https://github.com/stnamjef
+    email:           mailto:stnamjef@naver.com
 
 # Gems
 # plugins:
