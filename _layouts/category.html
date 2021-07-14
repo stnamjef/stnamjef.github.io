@@ -20,16 +20,28 @@
       </div>
 
       <div class="container content">
-        <h1>{{ page.category }}</h1>
-        <ul>
         {% for post in site.categories[page.category] %}
-          <li>
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              {{ post.title }}
-            </a>
-          </li>
+        <article class="post-preview">
+          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <h2 class="post-title">{{ post.title }}</h2>
+          </a>
+          {% if post.subtitle %}
+          <h4 class="post-subtitle">{{ post.subtitle }}</h3>
+          {% else %}
+          <h4 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords:12 }}</h3>
+          {% endif %}
+          <p>
+            {% if post.author %}
+            {{ post.author }}
+            {% else %}
+            {{ site.author }}
+            {% endif %}
+            on
+            {{ post.date | date: '%B %d, %Y' }}
+          </p>
+        </article>
+        <hr>
         {% endfor %}
-      </ul>
       </div>
     </div>
 
