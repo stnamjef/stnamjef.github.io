@@ -4,8 +4,6 @@ title: Improvement of object detector using multi-scale RoI pooling and feature 
 categories: ['project']
 ---
 
-# Improvement of object detector using multi-scale RoI pooling and feature pyramid network
-
 ## Abstract
 
 Feature Pyramid Network (FPN) enhances localization accuracy and detection performance on small objects by using multiple scales of features. FPN adopts lateral connections and a top-down pathway to make low-level features semantically more meaningful; however it uses only single-scale features to pool regions of interest (RoIs) when detecting objects. In this paper, we show that single-scale RoI pooling may not be the best solution for accurate localization and propose multi-scale RoI pooling to improve the minor drawbacks of FPN. The proposed method pools RoIs from three levels of features and concatenates the pooled features to detect objects. Thus, FPN with multi-scale RoI pooling, called FPN+, detects objects by taking account of all information scattered across three levels of features. FPN+ improved FPN by 2.81 and 1.1 points in COCO-style average precision (AP) when tested on PASCAL VOC 2007 test and COCO 2017 validation datasets, respectively.
