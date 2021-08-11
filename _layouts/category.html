@@ -23,13 +23,8 @@
         {% for post in site.categories[page.category] %}
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
+            <h3 class="post-title">{{ post.title }}</h2>
           </a>
-          {% if post.subtitle %}
-          <h4 class="post-subtitle">{{ post.subtitle }}</h3>
-          {% else %}
-          <h4 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords:12 }}</h3>
-          {% endif %}
           <p>
             on
             {{ post.date | date: '%B %d, %Y' }}
