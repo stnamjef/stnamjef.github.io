@@ -23,13 +23,13 @@ Feature Pyramid Network(FPN)는 고수준 특징맵(feature map)과 저수준 �
 FPN은 top-down 구조를 적용해 저수준 특징맵의 의미 정보를 강화했다(그림 1). 이로 인하여 모든 수준의 특징맵이 비슷한 수준의 의미 정보를 갖는다면, 작은 객체일수록 공간 정보를 잘 보존하는 저수준 특징맵에서 검출하는 것이 논리적으로 맞다. 이를 검증하기 위하여 각 수준의 특징맵 중 하나씩만 사용하여 모델을 학습시키고 이들의 AP를 비교했다. 예를 들어, 아래의 좌측 모델은 5번 합성곱층에서 생성된 특징맵만 사용하여 객체를 검출한다. 우측 모델은 4번 합성곱층에서 생성된 특징맵만 사용한다. 두 수준의 특징맵이 비슷한 의미 정보를 갖는다면, 스케일이 큰 특징맵을 사용하는 우측 모델의 AP가 더 높아야 한다고 가정했다.
 
 <p class=img>
-    <img src="/public/img/fpn_experiment_model.png"/>
+    <img src="/public/img/fpn_experiment_models.png"/>
 </p>
 
 **그림 2** 실험에 사용된 모델의 예시. 좌: 5번 특징맵만 사용하는 모델, 우: 4번 특징맵만 사용하는 모델
 
 <p class=img>
-    <img src="/public/img/fpn_result1.png"/>
+    <img src="/public/img/fpn_results1.png"/>
 </p>
 
 **표 1** 특징맵의 수준에 따른 모델의 성능 비교. 각 모델은 자신의 이름에 해당하는 수준의 특징만 사용한다. 모델 학습과 성능 측정에 이용된 데이터는 각각 VOC 07 trainval, test 데이터이다.
@@ -39,7 +39,7 @@ FPN은 top-down 구조를 적용해 저수준 특징맵의 의미 정보를 강�
 #### **4. Proposed method**
 
 <p class=img>
-    <img src="/public/img/fpn_result2.png"/>
+    <img src="/public/img/fpn_results2.png"/>
 </p>
 
 **표 2** 특징맵 수에 따른 모델의 성능 비교. 첫 번째부터 차례대로 특징맵을 2개, 3개, 4개 사용하는 모델이다.
@@ -57,7 +57,7 @@ FPN의 한계를 보완하기 위해 multi-scale RoI pooling 방법을 제안한
 ##### **5.1. Detection results**
 
 <p class=img>
-    <img src="/public/img/fpn_result3.png"/>
+    <img src="/public/img/fpn_results3.png"/>
 </p>
 
 **표 3** FPN, FPN+의 성능 측정 결과
@@ -75,7 +75,7 @@ VOC 07 데이터로 평가했을 때 FPN+가 APs를 제외한 모든 지표에�
 #### **3. FPN+ detection examples**
 
 <p class=img>
-    <img src="/public/img/fpn_detection_example.png"/>
+    <img src="/public/img/fpn_detection_examples.png"/>
 </p>
 
 **그림 5** Examples of detection results on PASCAL VOC 2007 test data using FPN+. The model was trained on VOC 2007, 2012 trainval datasets combined, and a score thresh was 0.6.
