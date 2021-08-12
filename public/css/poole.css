@@ -107,6 +107,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 p.img {
@@ -241,19 +242,22 @@ img {
 
 /* Tables */
 table {
-  margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border-top: 3px double #313131;
+  border-bottom: 3px double #313131;
   border-collapse: collapse;
+  line-height: 1.25;
 }
-td,
+
+td {
+  padding: .25rem .5rem;
+}
+
 th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  border-bottom: 1px solid #313131;
+  background-color: #f2f2f2;
+  font-weight: 400;
 }
 
 
