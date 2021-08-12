@@ -6,7 +6,7 @@
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <img src=/public/profile.jpg>
-    <p style="margin: 0;">{{ site.description }}</p>
+    <p style="margin: 0.25rem 0 0;">{{ site.description }}</p>
     {% if site.author.contact %}
     {% assign len = site.author.contact | size %}
     {% assign current_index = 0 %}
@@ -42,12 +42,13 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="/category/project">Project</a>
+    <a class="sidebar-nav-item" href="/category/project">Projects</a>
+    <a class="sidebar-nav-item" href="/category/study">Studies</a>
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
+      &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.
     </p>
   </div>
 </div>
