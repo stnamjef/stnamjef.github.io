@@ -247,6 +247,7 @@ table {
   border-bottom: 3px double #313131;
   border-collapse: collapse;
   line-height: 1.25;
+  text-align: center;
 }
 
 td {
